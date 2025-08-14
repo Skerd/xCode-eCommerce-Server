@@ -1,4 +1,5 @@
 node_modules/*
 logs/*
 /yarn.lock
-.idea/*
+.idea
+/package-lock.json

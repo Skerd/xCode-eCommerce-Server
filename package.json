@@ -1,0 +1,33 @@
+{
+  "name": "xcode-ecommerce-server",
+  "version": "1.0.0",
+  "description": "NodeJs Server (TypeScript) using MicroServices and Kafka",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "ts-node-dev -r dotenv/config -r tsconfig-paths/register --respawn server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skerd/xCode-eCommerce-Server.git"
+  },
+  "keywords": [
+    "eCommerce"
+  ],
+  "author": "xCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Skerd/xCode-eCommerce-Server/issues"
+  },
+  "homepage": "https://github.com/Skerd/xCode-eCommerce-Server#readme",
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "tsconfig-paths": "^4.2.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  }
+}
