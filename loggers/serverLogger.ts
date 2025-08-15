@@ -27,7 +27,8 @@ const WinstonLogger = createLogger({
 const dontPrintCodes = [];
 type logMessageType = "err" | "warn" | "info" | "debug" | "default";
 export enum Logger {
-    SERVER = 'SERVER'
+    SERVER = "SERVER",
+    DATABASE = "DATABASE"
 }
 
 type logType = {

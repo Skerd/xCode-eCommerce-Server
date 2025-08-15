@@ -34,7 +34,10 @@
     "paths": /* Specify a set of entries that re-map imports to additional lookup locations. */
     {
       "@_shared/*": ["./_shared/*"],
-      "@loggers/*": ["./loggers/*"]
+      "@loggers/*": ["./loggers/*"],
+      "@environment": ["./environment/index.ts"],
+      "@utilities": ["./utilities/index.ts"],
+      "@connections/*": ["./connections/*"]
     },
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@integrationTypes'. */

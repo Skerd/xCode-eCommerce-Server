@@ -26,8 +26,12 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
     "dotenv": "^17.2.1",
+    "express": "^5.1.0",
     "moment-timezone": "^0.6.0",
+    "mongoose": "^8.17.1",
     "timezones.json": "^1.7.2",
     "tsconfig-paths": "^4.2.0",
     "winston-daily-rotate-file": "^5.0.0"
