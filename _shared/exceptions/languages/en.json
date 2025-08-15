@@ -1,0 +1,252 @@
+{
+  "serverExceptions": {
+    "formNotCorrect": {
+      "message": "The submitted form is not correct",
+      "error_code": "formNotCorrect"
+    }
+  },
+  "validationExceptions": {
+    "string": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notString": {
+        "message": "'{}' must be text",
+        "error_code": "must_be_string"
+      },
+      "noMatch": {
+        "message": "'{}' and '{}' must be the same field",
+        "error_code": "no_match"
+      },
+      "shouldNotMatch": {
+        "message": "'{}' and '{}' must not be the same",
+        "error_code": "shouldNotMatch"
+      },
+      "mustBe": {
+        "message": "'{}' must be one of the values: [{}]",
+        "error_code": "mustBe"
+      },
+      "stringTooShort": {
+        "message": "'{}' must have at least {} characters",
+        "error_code": "string_too_short"
+      },
+      "stringTooLong": {
+        "message": "'{}' must have at most {} characters",
+        "error_code": "string_too_long"
+      },
+      "invalidOptions": {
+        "message": "The options provided for '{}' are not valid",
+        "error_code": "invalid_options"
+      }
+    },
+    "number": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notNumber": {
+        "message": "'{}' must be a number",
+        "error_code": "must_be_number"
+      },
+      "notInteger": {
+        "message": "'{}' must be an integer",
+        "error_code": "must_be_integer"
+      },
+      "notPositive": {
+        "message": "'{}' must be a positive number",
+        "error_code": "must_be_positive"
+      },
+      "notNegative": {
+        "message": "'{}' must be a negative number",
+        "error_code": "must_be_negative"
+      },
+      "greaterThanOrEqual": {
+        "message": "'{}' must be greater than or equal to: {}",
+        "error_code": "greaterThanOrEqual"
+      },
+      "greaterThan": {
+        "message": "'{}' must be greater than: {}",
+        "error_code": "greaterThan"
+      },
+      "lessThanOrEqual": {
+        "message": "'{}' must be less than or equal to: {}",
+        "error_code": "lessThanOrEqual"
+      },
+      "less_than_or_equal_to_field": {
+        "message": "'{}' must be less than or equal to '{}'",
+        "error_code": "less_than_or_equal_to_field"
+      },
+      "greater_than_or_equal_to_field": {
+        "message": "'{}' must be greater than or equal to '{}'",
+        "error_code": "greater_than_or_equal_to_field"
+      }
+    },
+    "date": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notString": {
+        "message": "'{}' must be text",
+        "error_code": "must_be_string"
+      },
+      "notCorrectDate": {
+        "message": "'{}' is not correct",
+        "error_code": "not_correct_date"
+      },
+      "notInTheFuture": {
+        "message": "'{}' cannot be in the future",
+        "error_code": "not_in_the_future"
+      },
+      "wrongTimezone": {
+        "message": "'{}' is not correct",
+        "error_code": "wrong_timezone"
+      }
+    },
+    "objectId": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notString": {
+        "message": "'{}' must be text",
+        "error_code": "must_be_string"
+      },
+      "notCorrect": {
+        "message": "'{}' is not a valid ObjectId",
+        "error_code": "notCorrect"
+      },
+      "notCorrectArray": {
+        "message": "'{}' is not a valid ObjectId array",
+        "error_code": "notCorrectArray"
+      }
+    },
+    "user": {
+      "mustBe18": {
+        "message": "You must be at least 18 years old",
+        "error_code": "must_be_18"
+      },
+      "mustExist": {
+        "message": "User must exist in the system",
+        "error_code": "mustExist"
+      }
+    },
+    "format": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notString": {
+        "message": "'{}' must be text",
+        "error_code": "must_be_string"
+      },
+      "notEmail": {
+        "message": "The following '{}' is not valid",
+        "error_code": "not_email"
+      },
+      "notPassword": {
+        "message": "'{}' must have at least eight characters, at least one uppercase letter, one lowercase letter, one number and one special character.",
+        "error_code": "not_password"
+      },
+      "passwordTooShort": {
+        "message": "'{}' must have at least {} characters",
+        "error_code": "password_too_short"
+      },
+      "notUrl": {
+        "message": "'{}' is not a valid URL",
+        "error_code": "not_url"
+      },
+      "notIpAddress": {
+        "message": "'{}' is not a valid IP address",
+        "error_code": "not_ip_address"
+      },
+      "notPhoneNumberObject": {
+        "message": "'{}' is not a valid phone number object",
+        "error_code": "not_phone_number_object"
+      },
+      "invalidPhonePrefix": {
+        "message": "'{}' is not a valid phone number prefix",
+        "error_code": "invalid_phone_prefix"
+      },
+      "invalidPhoneNumber": {
+        "message": "'{}' is not a valid phone number",
+        "error_code": "invalid_phone_number"
+      },
+      "notCorrect": {
+        "message": "'{}' must be according to this format: '{}'",
+        "error_code": "notCorrect"
+      }
+    },
+    "boolean": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      },
+      "notBoolean": {
+        "message": "'{}' must be 'true' or 'false'",
+        "error_code": "not_boolean"
+      },
+      "notTrue": {
+        "message": "'{}' must be 'true'",
+        "error_code": "not_true"
+      },
+      "notFalse": {
+        "message": "'{}' must be 'false'",
+        "error_code": "not_false"
+      }
+    },
+    "array": {
+      "notArray": {
+        "message": "'{}' must be an array",
+        "error_code": "must_be_array"
+      },
+      "notEmpty": {
+        "message": "'{}' cannot be an empty array",
+        "error_code": "array_not_empty"
+      },
+      "arrayTooShort": {
+        "message": "'{}' must have at least {} elements",
+        "error_code": "array_too_short"
+      },
+      "arrayTooLong": {
+        "message": "'{}' must have at most {} elements",
+        "error_code": "array_too_long"
+      }
+    },
+    "object": {
+      "notObject": {
+        "message": "'{}' must be an object",
+        "error_code": "must_be_object"
+      },
+      "notEmpty": {
+        "message": "'{}' cannot be an empty object",
+        "error_code": "object_not_empty"
+      }
+    },
+    "any": {
+      "notEmpty": {
+        "message": "'{}' is a required field",
+        "error_code": "must_not_be_empty"
+      }
+    },
+    "form": {
+      "notCorrect": {
+        "message": "The submitted form is not correct",
+        "error_code": "form_not_correct"
+      }
+    },
+    "notFound": {
+      "notDefinedError": {
+        "message": "The specific error could not be found in the error list",
+        "error_code": "not_defined_error"
+      }
+    }
+  },
+  "notFound": {
+    "not_defined_error": {
+      "message": "The specific error could not be found in the error list.",
+      "error_code": "not_defined_error"
+    }
+  }
+}

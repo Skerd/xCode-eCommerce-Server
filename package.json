@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "dotenv": "^17.2.1",
+    "moment-timezone": "^0.6.0",
+    "timezones.json": "^1.7.2",
     "tsconfig-paths": "^4.2.0",
     "winston-daily-rotate-file": "^5.0.0"
   }
