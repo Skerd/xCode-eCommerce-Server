@@ -1,3 +1,5 @@
+import * as process from "node:process";
+
 export const SERVER = {
     PORT: parseInt(process.env.SERVER_PORT),
     NODE_ENV: process.env.SERVER_NODE_ENV,
@@ -26,6 +28,7 @@ export const MONGO_DB = {
 };
 
 export const CONSTANTS = {
+    DEFAULT_TIMEZONE: process.env.DEFAULT_TIMEZONE,
     DEFAULT_LANGUAGE: process.env.DEFAULT_LANGUAGE,
     SUPPORTED_LANGUAGES: process.env.SUPPORTED_LANGUAGES.split(",")
 };

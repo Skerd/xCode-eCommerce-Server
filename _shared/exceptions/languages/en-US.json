@@ -1,251 +1,263 @@
 {
   "serverExceptions": {
     "formNotCorrect": {
-      "message": "Forma e dorëzuar nuk është e saktë",
+      "message": "The submitted form is not correct",
       "error_code": "formNotCorrect"
+    },
+    "mongoDb": {
+      "message": "The operation could not be completed",
+      "error_code": "mongoDb",
+      "extra_messages": {
+        "save": "Cannot save deleted entries",
+        "update": "Cannot update deleted entries",
+        "delete": "Cannot delete already deleted entries",
+        "replace": "Cannot replace entries",
+        "restore": "Cannot restore non-deleted entries",
+        "doesNotExist": "Entry does not exist"
+      }
     }
   },
   "validationExceptions": {
     "string": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notString": {
-        "message": "'{}' duhet të jetë tekst",
+        "message": "'{}' must be text",
         "error_code": "must_be_string"
       },
       "noMatch": {
-        "message": "'{}' dhe '{}' duhet të jenë e njëjta fushë",
+        "message": "'{}' and '{}' must be the same field",
         "error_code": "no_match"
       },
       "shouldNotMatch": {
-        "message": "'{}' dhe '{}' nuk duhet të jenë të njëjta",
+        "message": "'{}' and '{}' must not be the same",
         "error_code": "shouldNotMatch"
       },
       "mustBe": {
-        "message": "'{}' duhet të jetë një nga vlerat: [{}]",
+        "message": "'{}' must be one of the values: [{}]",
         "error_code": "mustBe"
       },
       "stringTooShort": {
-        "message": "'{}' duhet të ketë të paktën {} karaktere",
+        "message": "'{}' must have at least {} characters",
         "error_code": "string_too_short"
       },
       "stringTooLong": {
-        "message": "'{}' duhet të ketë maksimumi {} karaktere",
+        "message": "'{}' must have at most {} characters",
         "error_code": "string_too_long"
       },
       "invalidOptions": {
-        "message": "Opsionet e dhëna për '{}' nuk janë të vlefshme",
+        "message": "The options provided for '{}' are not valid",
         "error_code": "invalid_options"
       }
     },
     "number": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notNumber": {
-        "message": "'{}' duhet të jetë një numër",
+        "message": "'{}' must be a number",
         "error_code": "must_be_number"
       },
       "notInteger": {
-        "message": "'{}' duhet të jetë një numër i plotë",
+        "message": "'{}' must be an integer",
         "error_code": "must_be_integer"
       },
       "notPositive": {
-        "message": "'{}' duhet të jetë një numër pozitiv",
+        "message": "'{}' must be a positive number",
         "error_code": "must_be_positive"
       },
       "notNegative": {
-        "message": "'{}' duhet të jetë një numër negativ",
+        "message": "'{}' must be a negative number",
         "error_code": "must_be_negative"
       },
       "greaterThanOrEqual": {
-        "message": "'{}' duhet të jetë më i madh ose i barabartë me: {}",
+        "message": "'{}' must be greater than or equal to: {}",
         "error_code": "greaterThanOrEqual"
       },
       "greaterThan": {
-        "message": "'{}' duhet të jetë më i madh se: {}",
+        "message": "'{}' must be greater than: {}",
         "error_code": "greaterThan"
       },
       "lessThanOrEqual": {
-        "message": "'{}' duhet të jetë më i vogël ose i barabartë me: {}",
+        "message": "'{}' must be less than or equal to: {}",
         "error_code": "lessThanOrEqual"
       },
       "less_than_or_equal_to_field": {
-        "message": "'{}' duhet të jetë më i vogël ose i barabartë me '{}'",
+        "message": "'{}' must be less than or equal to '{}'",
         "error_code": "less_than_or_equal_to_field"
       },
       "greater_than_or_equal_to_field": {
-        "message": "'{}' duhet të jetë më i madh ose i barabartë me '{}'",
+        "message": "'{}' must be greater than or equal to '{}'",
         "error_code": "greater_than_or_equal_to_field"
       }
     },
     "date": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notString": {
-        "message": "'{}' duhet të jetë tekst",
+        "message": "'{}' must be text",
         "error_code": "must_be_string"
       },
       "notCorrectDate": {
-        "message": "'{}' nuk është e saktë",
+        "message": "'{}' is not correct",
         "error_code": "not_correct_date"
       },
       "notInTheFuture": {
-        "message": "'{}' nuk mund të jetë në të ardhmen",
+        "message": "'{}' cannot be in the future",
         "error_code": "not_in_the_future"
       },
       "wrongTimezone": {
-        "message": "'{}' nuk është e saktë",
+        "message": "'{}' is not correct",
         "error_code": "wrong_timezone"
       }
     },
     "objectId": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notString": {
-        "message": "'{}' duhet të jetë tekst",
+        "message": "'{}' must be text",
         "error_code": "must_be_string"
       },
       "notCorrect": {
-        "message": "'{}' nuk është një ObjectId i vlefshëm",
+        "message": "'{}' is not a valid ObjectId",
         "error_code": "notCorrect"
       },
       "notCorrectArray": {
-        "message": "'{}' nuk është një listë ObjectId e vlefshme",
+        "message": "'{}' is not a valid ObjectId array",
         "error_code": "notCorrectArray"
       }
     },
     "user": {
       "mustBe18": {
-        "message": "Duhet të jeni të paktën 18 vjeç",
+        "message": "You must be at least 18 years old",
         "error_code": "must_be_18"
       },
       "mustExist": {
-        "message": "Përdoruesi duhet të ekzistojë në sistem",
+        "message": "User must exist in the system",
         "error_code": "mustExist"
       }
     },
     "format": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notString": {
-        "message": "'{}' duhet të jetë tekst",
+        "message": "'{}' must be text",
         "error_code": "must_be_string"
       },
       "notEmail": {
-        "message": "Vlera '{}' nuk është e vlefshme",
+        "message": "The following '{}' is not valid",
         "error_code": "not_email"
       },
       "notPassword": {
-        "message": "'{}' duhet të ketë të paktën tetë karaktere, të paktën një shkronjë të madhe, një shkronjë të vogël, një numër dhe një karakter special.",
+        "message": "'{}' must have at least eight characters, at least one uppercase letter, one lowercase letter, one number and one special character.",
         "error_code": "not_password"
       },
       "passwordTooShort": {
-        "message": "'{}' duhet të ketë të paktën {} karaktere",
+        "message": "'{}' must have at least {} characters",
         "error_code": "password_too_short"
       },
       "notUrl": {
-        "message": "'{}' nuk është një URL e vlefshme",
+        "message": "'{}' is not a valid URL",
         "error_code": "not_url"
       },
       "notIpAddress": {
-        "message": "'{}' nuk është një adresë IP e vlefshme",
+        "message": "'{}' is not a valid IP address",
         "error_code": "not_ip_address"
       },
       "notPhoneNumberObject": {
-        "message": "'{}' nuk është një objekt numri telefoni i vlefshëm",
+        "message": "'{}' is not a valid phone number object",
         "error_code": "not_phone_number_object"
       },
       "invalidPhonePrefix": {
-        "message": "'{}' nuk është një prefiks numri telefoni i vlefshëm",
+        "message": "'{}' is not a valid phone number prefix",
         "error_code": "invalid_phone_prefix"
       },
       "invalidPhoneNumber": {
-        "message": "'{}' nuk është një numër telefoni i vlefshëm",
+        "message": "'{}' is not a valid phone number",
         "error_code": "invalid_phone_number"
       },
       "notCorrect": {
-        "message": "'{}' duhet të jetë sipas këtij formati: '{}'",
+        "message": "'{}' must be according to this format: '{}'",
         "error_code": "notCorrect"
       }
     },
     "boolean": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       },
       "notBoolean": {
-        "message": "'{}' duhet të jetë 'true' ose 'false'",
+        "message": "'{}' must be 'true' or 'false'",
         "error_code": "not_boolean"
       },
       "notTrue": {
-        "message": "'{}' duhet të jetë 'true'",
+        "message": "'{}' must be 'true'",
         "error_code": "not_true"
       },
       "notFalse": {
-        "message": "'{}' duhet të jetë 'false'",
+        "message": "'{}' must be 'false'",
         "error_code": "not_false"
       }
     },
     "array": {
       "notArray": {
-        "message": "'{}' duhet të jetë një listë (array)",
+        "message": "'{}' must be an array",
         "error_code": "must_be_array"
       },
       "notEmpty": {
-        "message": "'{}' nuk mund të jetë një listë bosh",
+        "message": "'{}' cannot be an empty array",
         "error_code": "array_not_empty"
       },
       "arrayTooShort": {
-        "message": "'{}' duhet të ketë të paktën {} elemente",
+        "message": "'{}' must have at least {} elements",
         "error_code": "array_too_short"
       },
       "arrayTooLong": {
-        "message": "'{}' duhet të ketë maksimumi {} elemente",
+        "message": "'{}' must have at most {} elements",
         "error_code": "array_too_long"
       }
     },
     "object": {
       "notObject": {
-        "message": "'{}' duhet të jetë një objekt",
+        "message": "'{}' must be an object",
         "error_code": "must_be_object"
       },
       "notEmpty": {
-        "message": "'{}' nuk mund të jetë një objekt bosh",
+        "message": "'{}' cannot be an empty object",
         "error_code": "object_not_empty"
       }
     },
     "any": {
       "notEmpty": {
-        "message": "'{}' është një fushë e detyrueshme",
+        "message": "'{}' is a required field",
         "error_code": "must_not_be_empty"
       }
     },
     "form": {
       "notCorrect": {
-        "message": "Forma e dorëzuar nuk është e saktë",
+        "message": "The submitted form is not correct",
         "error_code": "form_not_correct"
       }
     },
     "notFound": {
       "notDefinedError": {
-        "message": "Gabimi specifik nuk u gjet në listën e gabimeve",
+        "message": "The specific error could not be found in the error list",
         "error_code": "not_defined_error"
       }
     }
   },
   "notFound": {
     "not_defined_error": {
-      "message": "Gabimi specifik nuk u gjet në listën e gabimeve.",
+      "message": "The specific error could not be found in the error list.",
       "error_code": "not_defined_error"
     }
   }
