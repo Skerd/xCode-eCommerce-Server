@@ -32,3 +32,16 @@ export const CONSTANTS = {
     DEFAULT_LANGUAGE: process.env.DEFAULT_LANGUAGE,
     SUPPORTED_LANGUAGES: process.env.SUPPORTED_LANGUAGES.split(",")
 };
+
+export const KAFKA = {
+    BROKERS: process.env.KAFKA_BROKERS?.split(','),
+    CLIENT_ID: process.env.KAFKA_CLIENT_ID,
+    GROUP_ID: process.env.KAFKA_GROUP_ID,
+    RETRY_CAP: parseInt(process.env.KAFKA_RETRY_CAP),
+    CONNECTION_TIMER: parseInt(process.env.KAFKA_CONNECTION_TIMER),
+    TOPICS: {
+        USER_SIGNUP_REQUEST: 'user.signup.request',
+        USER_SIGNUP_COMPLETED: 'user.signup.completed',
+        USER_SIGNUP_FAILED: 'user.signup.failed'
+    }
+};

@@ -6,6 +6,7 @@ import express, {Application} from 'express';
 import {CONSTANTS, SERVER} from "@environment";
 import {getLogger, Logger} from "@loggers/serverLogger";
 import {connectToMongoDb} from "@connections/connectToMongoDb";
+import {connectToKafka} from "@connections/connectToKafka";
 import {CustomServerException, customServerExceptionToCustomClientException} from "@_shared/exceptions/exceptions";
 
 // dotenv.config();
@@ -103,6 +104,7 @@ function updateServerConfiguration(parentAction: number){
     logger.start();
     logger.debug(`Physical server is at: ${now.toString()}`);
     process.env.TZ = SERVER.TIMEZONE;
+    // process.env.KAFKAJS_NO_PARTITIONER_WARNING = '1';
     // process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
     now = new Date();
     logger.debug(`Server is set to: ${now.toString()}`);
@@ -257,6 +259,8 @@ logger.debug(`Opening server port to listen to: [${SERVER.PORT}]`);
 application.listen(SERVER.PORT, async () => {
 
     await connectToMongoDb("mongoDb", logger.action);
+    
+    await connectToKafka("kafka", logger.action);
 
     logger.debug("Mounting api endpoints");
     mountApiEndpoints(logger.action);

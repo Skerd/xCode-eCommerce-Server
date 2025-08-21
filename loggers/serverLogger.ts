@@ -28,7 +28,8 @@ const dontPrintCodes = [];
 type logMessageType = "err" | "warn" | "info" | "debug" | "default";
 export enum Logger {
     SERVER = "SERVER",
-    DATABASE = "DATABASE"
+    DATABASE = "DATABASE",
+    KAFKA = "KAFKA",
 }
 
 type logType = {

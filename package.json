@@ -26,14 +26,22 @@
     "typescript": "^5.9.2"
   },
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/kafkajs": "^1.8.2",
+    "@types/uuid": "^10.0.0",
+    "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "kafkajs": "^2.2.4",
     "moment-timezone": "^0.6.0",
     "mongoose": "^8.17.1",
     "timezones.json": "^1.7.2",
     "tsconfig-paths": "^4.2.0",
+    "uuid": "^11.1.0",
     "winston-daily-rotate-file": "^5.0.0"
   }
 }
