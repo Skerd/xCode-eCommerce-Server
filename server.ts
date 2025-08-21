@@ -7,6 +7,7 @@ import {CONSTANTS, SERVER} from "@environment";
 import {getLogger, Logger} from "@loggers/serverLogger";
 import {connectToMongoDb} from "@connections/connectToMongoDb";
 import {connectToKafka} from "@connections/connectToKafka";
+import {connectToRedis} from "@connections/connectToRedis";
 import {CustomServerException, customServerExceptionToCustomClientException} from "@_shared/exceptions/exceptions";
 
 // dotenv.config();
@@ -261,6 +262,8 @@ application.listen(SERVER.PORT, async () => {
     await connectToMongoDb("mongoDb", logger.action);
     
     await connectToKafka("kafka", logger.action);
+    
+    await connectToRedis("redis", logger.action);
 
     logger.debug("Mounting api endpoints");
     mountApiEndpoints(logger.action);

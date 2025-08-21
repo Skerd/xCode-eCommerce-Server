@@ -39,6 +39,7 @@
     "kafkajs": "^2.2.4",
     "moment-timezone": "^0.6.0",
     "mongoose": "^8.17.1",
+    "redis": "^4.7.1",
     "timezones.json": "^1.7.2",
     "tsconfig-paths": "^4.2.0",
     "uuid": "^11.1.0",

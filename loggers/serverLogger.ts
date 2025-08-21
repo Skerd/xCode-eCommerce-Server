@@ -30,6 +30,7 @@ export enum Logger {
     SERVER = "SERVER",
     DATABASE = "DATABASE",
     KAFKA = "KAFKA",
+    REDIS = "REDIS"
 }
 
 type logType = {
